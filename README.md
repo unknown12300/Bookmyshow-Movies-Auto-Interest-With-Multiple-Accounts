@@ -2,10 +2,17 @@ Automate BookMyShow interests with multiple accounts using Selenium with Python.
 
 𝐇𝐢𝐭 𝟑𝟎+ 𝐀𝐮𝐭𝐨 𝐈𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐓𝐡𝐞𝐧 𝐇𝐞𝐫𝐞 𝐈𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐜𝐞 𝐓𝐨 𝐌𝐚𝐤𝐞 𝐈𝐭 𝐅𝐚𝐬𝐭..
 
-(If you want to hit still more interest add emails)
-https://www.youtube.com/watch?v=FVumnHy5Tzo&t=1s&ab_channel=HelloWorld
+## (If you want to hit still more interest add emails)
+
+# in these website get more dot emails using single gmail and update in script..
+
+https://generator.email/blog/gmail-generator
+
+========================================================================
 
 Watch up to 3 minutes and 20 seconds, then
+
+https://www.youtube.com/watch?v=FVumnHy5Tzo&t=1s&ab_channel=HelloWorld
 
 First, open Chrome file location and the Chrome location(use start in: path) is
 
