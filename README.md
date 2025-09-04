@@ -8,7 +8,9 @@ Automate BookMyShow interests with multiple accounts using Selenium with Python.
 
 https://generator.email/blog/gmail-generator
 
-========================================================================
+==============================================
+
+## And Another Thing Open what that movie url and select the city then run the script by changing movie url in script more details below 👇.
 
 Watch up to 3 minutes and 20 seconds, then
 
