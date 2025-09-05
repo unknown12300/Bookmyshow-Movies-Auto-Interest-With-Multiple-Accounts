@@ -1,6 +1,6 @@
 Automate BookMyShow interests with multiple accounts using Selenium with Python.
 
-𝐇𝐢𝐭 𝟑𝟎+ 𝐀𝐮𝐭𝐨 𝐈𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐓𝐡𝐞𝐧 𝐇𝐞𝐫𝐞 𝐈𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐜𝐞 𝐓𝐨 𝐌𝐚𝐤𝐞 𝐈𝐭 𝐅𝐚𝐬𝐭..
+𝐇𝐢𝐭 10𝟎+ 𝐀𝐮𝐭𝐨 𝐈𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐓𝐡𝐞𝐧 𝐇𝐞𝐫𝐞 𝐈𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐜𝐞 𝐓𝐨 𝐌𝐚𝐤𝐞 𝐈𝐭 𝐅𝐚𝐬𝐭.. (if want more add email list)
 
 ## (If you want to hit still more interest add emails)
 
@@ -41,11 +41,10 @@ pip install selenium==4.2.0
 
 after enter im.py or double click on im.py
 
-replace with your temp mails in 17th line or gmails(use dot gmail genrator)
-replace with desired movie url in 32th line
-You only need to enter the OTP within 15 seconds(if need more seconds change in 50th line)..
-Note: After replacing the email and URL, the entire process will be automated(except otp entry)"
-👉 Note:Every time Bms updates the code, it varies. So, fork the code if not work means...
+## Note: After replacing the email and URL, the entire process will be automated(except otp entry)"
+
+## 👉 Note:Every time Bms updates the code, it varies. So, fork the code if not work means...
+
 To run the program, download the latest version of Chrome Driver from https://chromedriver.chromium.org/
 
 and extract the file to a specific folder.
