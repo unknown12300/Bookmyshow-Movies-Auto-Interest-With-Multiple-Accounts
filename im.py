@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import random
 
+# add more if needed...
 email_list = [
 "abc1@gmail.com",
 "abc2@gmail.com",
@@ -117,6 +118,7 @@ option.add_experimental_option("debuggerAddress", "localhost:9222")
 driver = webdriver.Chrome(options=option)
 driver.maximize_window()
 
+# before running the script in chrome open bms and select city then run..
 
 def visit_bookmyshow():
     """Visit the movie page."""
@@ -179,3 +181,4 @@ for email in email_list:
         continue
 
 driver.quit()
+
