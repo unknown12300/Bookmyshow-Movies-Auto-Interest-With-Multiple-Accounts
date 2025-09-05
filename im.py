@@ -1,70 +1,181 @@
+# for more emails want means add..
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.remote.webelement import WebElement
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
 import time
 import random
 
-# List of email addresses change to your required..
 email_list = [
-    'mysy@gmail.com', 'myy@gmail.com', 'my@gmail.com', 'm.y@gmail.com', '.my@gmail.com', 
-    'm.y@gmail.com', 'mygmail+marva@gmail.com', 'my@gmail.com', 'mygmail+derik@gmail.com', 
-    'mygmail+alvie@gmail.com', 'my@gmail.com', 'mygmail+gage@gmail.com', 'mygmail+max@gmail.com', 
-    'my@gmail.com', 'mygmail+lita@gmail.com', 'mygmail+ginny@gmail.com', 'mygmail+timmy@gmail.com', 
-    'mygmail+kent@gmail.com', 'mygmail+kali@gmail.com', 'mygmail+bryce@gmail.com', 'my@gmail.com', 
-    'mygmail+rosie@gmail.com', 'mygmail+madge@gmail.com', 'my@gmail.com', 'mygmail+keily@gmail.com', 
-    'my@gmail.com', 'mygmail+evans@gmail.com', 'mygmail+stan@gmail.com', 'mygmail+kaye@gmail.com'
+"abc1@gmail.com",
+"abc2@gmail.com",
+"abc3@gmail.com",
+"abc4@gmail.com",
+"abc5@gmail.com",
+"abc6@gmail.com",
+"abc7@gmail.com",
+"abc8@gmail.com",
+"abc9@gmail.com",
+"abc10@gmail.com",
+"abc11@gmail.com",
+"abc12@gmail.com",
+"abc13@gmail.com",
+"abc14@gmail.com",
+"abc15@gmail.com",
+"abc16@gmail.com",
+"abc17@gmail.com",
+"abc18@gmail.com",
+"abc19@gmail.com",
+"abc20@gmail.com",
+"abc21@gmail.com",
+"abc22@gmail.com",
+"abc23@gmail.com",
+"abc24@gmail.com",
+"abc25@gmail.com",
+"abc26@gmail.com",
+"abc27@gmail.com",
+"abc28@gmail.com",
+"abc29@gmail.com",
+"abc30@gmail.com",
+"abc31@gmail.com",
+"abc32@gmail.com",
+"abc33@gmail.com",
+"abc34@gmail.com",
+"abc35@gmail.com",
+"abc36@gmail.com",
+"abc37@gmail.com",
+"abc38@gmail.com",
+"abc39@gmail.com",
+"abc40@gmail.com",
+"abc41@gmail.com",
+"abc42@gmail.com",
+"abc43@gmail.com",
+"abc44@gmail.com",
+"abc45@gmail.com",
+"abc46@gmail.com",
+"abc47@gmail.com",
+"abc48@gmail.com",
+"abc49@gmail.com",
+"abc50@gmail.com",
+"abc51@gmail.com",
+"abc52@gmail.com",
+"abc53@gmail.com",
+"abc54@gmail.com",
+"abc55@gmail.com",
+"abc56@gmail.com",
+"abc57@gmail.com",
+"abc58@gmail.com",
+"abc59@gmail.com",
+"abc60@gmail.com",
+"abc61@gmail.com",
+"abc62@gmail.com",
+"abc63@gmail.com",
+"abc64@gmail.com",
+"abc65@gmail.com",
+"abc66@gmail.com",
+"abc67@gmail.com",
+"abc68@gmail.com",
+"abc69@gmail.com",
+"abc70@gmail.com",
+"abc71@gmail.com",
+"abc72@gmail.com",
+"abc73@gmail.com",
+"abc74@gmail.com",
+"abc75@gmail.com",
+"abc76@gmail.com",
+"abc77@gmail.com",
+"abc78@gmail.com",
+"abc79@gmail.com",
+"abc80@gmail.com",
+"abc81@gmail.com",
+"abc82@gmail.com",
+"abc83@gmail.com",
+"abc84@gmail.com",
+"abc85@gmail.com",
+"abc86@gmail.com",
+"abc87@gmail.com",
+"abc88@gmail.com",
+"abc89@gmail.com",
+"abc90@gmail.com",
+"abc91@gmail.com",
+"abc92@gmail.com",
+"abc93@gmail.com",
+"abc94@gmail.com",
+"abc95@gmail.com",
+"abc96@gmail.com",
+"abc97@gmail.com",
+"abc98@gmail.com",
+"abc99@gmail.com",
+"abc100@gmail.com"
 ]
+
+
 
 option = webdriver.ChromeOptions()
 option.add_experimental_option("debuggerAddress", "localhost:9222")
 driver = webdriver.Chrome(options=option)
 driver.maximize_window()
 
+
 def visit_bookmyshow():
-    driver.get("https://in.bookmyshow.com") #change with required movie(auto interest button required movie) url....
-    time.sleep(5)
+    """Visit the movie page."""
+    driver.get("https://in.bookmyshow.com/movies/bengaluru/mark/ET00460662?type=coming-soon") # change to which movie url needed.
+    time.sleep(2)  
 
 def click_im_interested():
-    driver.find_element(By.XPATH, "/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div/button").click() #interest button click
-    time.sleep(2)
+    """Click the 'I'm interested' button."""
+    button = WebDriverWait(driver, 10).until(
+        EC.element_to_be_clickable((By.XPATH, "//span[contains(text(),\"I'm interested\")]"))
+    )
+    button.click()
+    time.sleep(1)
 
 def click_continue_with_email():
-    driver.find_element(By.XPATH, '//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click email option
-    time.sleep(2)
+    """Click 'Continue with Email' option."""
+    button = WebDriverWait(driver, 10).until(
+        EC.element_to_be_clickable((By.XPATH, "//div[contains(text(),'Continue with Email')]"))
+    )
+    button.click()
+    time.sleep(1)
 
 def enter_email(email):
-    email_input = driver.find_element(By.CSS_SELECTOR, '#emailId') #email select orderwise
+    """Enter email in the input and submit."""
+    email_input = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.CSS_SELECTOR, "#emailId"))
+    )
     email_input.send_keys(email)
     time.sleep(1)
     email_input.send_keys(Keys.ENTER)
 
 def confirm_interest():
-    time.sleep(15) #time for otp enter manually
-    driver.find_element(By.XPATH, "/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div/button").click() #click on interest button
-    time.sleep(2)
+    """Wait for OTP entry and click 'I'm interested' again."""
+    button = WebDriverWait(driver, 60).until(
+        EC.element_to_be_clickable((By.XPATH, "//span[contains(text(),\"I'm interested\")]"))
+    )
+    button.click()
+    time.sleep(1)
 
 def sign_out():
-    driver.find_element(By.XPATH, "/html/body/div[1]/div/div[1]/div[1]/div/div/div/div[2]/div[2]/span").click() #human logo
-    time.sleep(2)
-    driver.find_element(By.CSS_SELECTOR, "#bottomSheet-model-close > div > div > div.sc-1wrkwq1-69.dkEigO > div").click()  # signout
-    time.sleep(2)
+    """Sign out of the account."""
+    driver.find_element(By.XPATH, "//span[contains(text(),'Hi, Guest')]").click()
+    time.sleep(1)
+    driver.find_element(By.XPATH, "//div[contains(text(),'Sign out')]").click()
+    time.sleep(1)
 
-
-# Main script execution
 for email in email_list:
-    visit_bookmyshow()
-    click_im_interested()
-    click_continue_with_email()
-    enter_email(email)
-    confirm_interest()
-    sign_out()
+    try:
+        visit_bookmyshow()
+        click_im_interested()
+        click_continue_with_email()
+        enter_email(email)
+        confirm_interest()
+        sign_out()
+
+        time.sleep(random.uniform(2, 5))
+
+    except Exception as e:
+        print(f"Error with {email}: {e}")
+        continue
 
 driver.quit()
