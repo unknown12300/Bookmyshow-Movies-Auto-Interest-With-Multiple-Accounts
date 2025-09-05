@@ -121,7 +121,7 @@ driver.maximize_window()
 # before running the script in chrome open bms and select city then run..
 
 def visit_bookmyshow():
-    """Visit the movie page."""
+    """Movie page url change to required."""
     driver.get("https://in.bookmyshow.com/movies/bengaluru/mark/ET00460662?type=coming-soon") # change to which movie url needed.
     time.sleep(2)  
 
@@ -181,4 +181,5 @@ for email in email_list:
         continue
 
 driver.quit()
+
 
