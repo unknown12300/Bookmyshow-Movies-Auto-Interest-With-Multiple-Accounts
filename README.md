@@ -12,6 +12,8 @@ https://generator.email/blog/gmail-generator
 
 ## And Another Thing Open what that movie url and select the city then run the script by changing movie url in script more details below 👇.
 
+# If bms block then add new chrome profile....
+
 Watch up to 3 minutes and 20 seconds, then
 
 https://www.youtube.com/watch?v=FVumnHy5Tzo&t=1s&ab_channel=HelloWorld
