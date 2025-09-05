@@ -49,8 +49,10 @@ To run the program, download the latest version of Chrome Driver from https://ch
 
 and extract the file to a specific folder.
 
-enter im.py. Alternatively, you can rename the file and run it."
+## enter im.py. Alternatively, you can run by entering python im.py
+
 👉Note:-
+
 👉If you have the latest version of Selenium, the code may not run
 
 👉open cmd and enter
