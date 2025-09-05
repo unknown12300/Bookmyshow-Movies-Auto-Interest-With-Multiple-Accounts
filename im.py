@@ -122,7 +122,7 @@ driver.maximize_window()
 
 def visit_bookmyshow():
     """Movie page url change to required."""
-    driver.get("https://in.bookmyshow.com/movies/bengaluru/mark/ET00460662?type=coming-soon") # change to which movie url needed.
+    driver.get("https://in.bookmyshow.com") # change to which movie url needed.
     time.sleep(2)  
 
 def click_im_interested():
@@ -181,5 +181,6 @@ for email in email_list:
         continue
 
 driver.quit()
+
 
 
