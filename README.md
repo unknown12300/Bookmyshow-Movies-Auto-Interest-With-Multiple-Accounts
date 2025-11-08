@@ -12,7 +12,12 @@ https://generator.email/blog/gmail-generator
 
 ## And Another Thing Open what that movie url and select the city then run the script by changing movie url in script more details below 👇.
 
-# If bms block then add new chrome profile....
+## if you got these like display
+
+## Sorry, you have been blocked
+You are unable to access bookmyshow.com
+
+then add new chrome profile....
 
 Watch up to 3 minutes and 20 seconds, then
 
